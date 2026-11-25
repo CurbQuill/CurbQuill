@@ -11,9 +11,12 @@
   <link rel="apple-touch-icon" href="./assets/icon-192.png">
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="stylesheet" href="./styles.css">
-  <script type="module" src="./app.js"></script>
+  
+<link rel="stylesheet" href="./terms.css"><script type="module" src="./terms-entry.mjs"></script>
 </head>
 <body>
+<p id="terms-loading">Opening Terms of Service…</p><noscript>Enable JavaScript to open this app.</noscript>
+<template id="application-template" data-entry="./app.js">
   <a class="skip" href="#main" id="skip-app" hidden>Skip to content</a>
   <div id="gate" class="gate">
     <div class="gate-brand">
@@ -250,5 +253,6 @@
     </form>
   </dialog>
   <datalist id="platforms"></datalist>
+</template>
 </body>
 </html>
